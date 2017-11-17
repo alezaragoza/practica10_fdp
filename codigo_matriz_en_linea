@@ -1,0 +1,73 @@
+#include<stdio.h>
+
+int main (){
+    
+int m1[1000][1000];
+int m2[1000][1000];
+int r1;
+int c1;
+int r2;
+int c2;
+int cr;
+int cc;
+int contr;
+int contc;
+int p;
+int contr2;
+int contc2;
+int p2;
+
+printf("Ingresa el numero de renglones de la matriz 1:\n");
+scanf("%d", &r1);
+printf("Ingresa el numero de columnas de la matriz 1:\n");
+scanf("%d", &c1);
+
+m1[1000][1000]=m1[r1][c1];
+
+while(contr<r1) {
+    contc=0;
+    while (contc<c1) {
+        printf("Poner numero de la matriz1 [%d][%d] \n" ,contr , contc);
+        scanf("%d" ,&m1[contr][contc]);
+    contc= contc+1;
+    }
+    contr= contr+1;
+}
+
+for (contr = 0; contr<r1; contr++){
+    for ( p = 0; p < c1; p++){
+        printf("%2d", m1[contr][p]);
+}
+printf("\t");
+}
+
+printf("Termina el llenado de matriz 1:\n");    
+
+
+printf("Ingresa el numero de renglones de la matriz 2:\n");
+scanf("%d", &r2);
+printf("Ingresa el numero de columnas de la matriz 2:\n");
+scanf("%d", &c2);
+
+m2[1000][1000]=m2[r2][c2];
+
+while(contr2<r2) {
+    contc2=0;
+    while (contc2<c2) {
+        printf("Poner numero de la matriz1 [%d][%d] \n" ,contr2 , contc2);
+        scanf("%d" ,&m2[contr2][contc2]);
+    contc2= contc2+1;
+    }
+    contr2= contr2+1;
+}
+
+for (contr2 = 0; contr2<r2; contr2++){
+    for ( p2 = 0; p2 < c2; p2++){
+        printf("%2d", m2[contr2][p2]);
+}
+printf("\t");
+}
+
+printf("Termina el llenado de matriz 2");    
+
+}
